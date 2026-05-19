@@ -1,12 +1,14 @@
 from fastapi import FastAPI
+from backend.routers import cards
 
-app = FastAPI()
+app = FastAPI(
+    title="The Better Credit",
+    description="India's smartest credit card reward optimizer",
+    version="0.1.0"
+)
+
+app.include_router(cards.router)
 
 @app.get("/")
-def home():
-    return {"status": "The Better Credit API is Live", "market": "India"}
-
-@app.get("/check-reward")
-def check_reward(card: str, amount: float):
-    # We will build the logic here soon!
-    return {"card": card, "estimated_reward": amount * 0.05}
+def root():
+    return {"message": "Welcome to The Better Credit API 🚀"}
