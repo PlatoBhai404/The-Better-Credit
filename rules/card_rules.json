@@ -1,0 +1,16 @@
+{
+  "cards": [
+    {
+      "card_id": "icici_sapphiro",
+      "card_name": "ICICI Sapphiro",
+      "bank": "ICICI",
+      "file": "rules/icici_sapphiro.json"
+    },
+    {
+      "card_id": "hdfc_platinum",
+      "card_name": "HDFC Platinum Plus",
+      "bank": "HDFC",
+      "file": "rules/hdfc_platinum.json"
+    }
+  ]
+}

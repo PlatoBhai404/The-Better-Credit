@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from backend.routers import cards
+from backend.routers import cards, suggest, auth
 
 app = FastAPI(
     title="The Better Credit",
@@ -8,6 +8,8 @@ app = FastAPI(
 )
 
 app.include_router(cards.router)
+app.include_router(suggest.router)
+app.include_router(auth.router)
 
 @app.get("/")
 def root():
