@@ -44,4 +44,4 @@ def get_cards(db: Session = Depends(get_db), current_user: str = Depends(get_cur
         raise HTTPException(status_code=404, detail="User not found")
 
     cards = db.query(Card).filter(Card.user_id == user.id).all()
-    return {"cards": cards}
+    return cards

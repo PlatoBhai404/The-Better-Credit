@@ -1,16 +1,22 @@
 {
   "cards": [
     {
-      "card_id": "icici_sapphiro",
-      "card_name": "ICICI Sapphiro",
-      "bank": "ICICI",
-      "file": "rules/icici_sapphiro.json"
+      "card_id": 3,
+      "card_name": "HDFC Millennia",
+      "bank": "HDFC",
+      "file": "rules/hdfc_millennia.json"
     },
     {
-      "card_id": "hdfc_platinum",
-      "card_name": "HDFC Platinum Plus",
-      "bank": "HDFC",
-      "file": "rules/hdfc_platinum.json"
+      "card_id": 4,
+      "card_name": "ICICI Amazon Pay",
+      "bank": "ICICI",
+      "file": "rules/icici_amazon_pay.json"
+    },
+    {
+      "card_id": 5,
+      "card_name": "Axis Flipkart",
+      "bank": "Axis",
+      "file": "rules/axis_flipkart.json"
     }
   ]
 }
