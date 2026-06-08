@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from backend.routers import cards, suggest, auth
+from backend.models import card, user, user_card
 
 app = FastAPI()
 
