@@ -1,22 +1,59 @@
 {
   "cards": [
     {
-      "card_id": 3,
-      "card_name": "HDFC Millennia",
-      "bank": "HDFC",
-      "file": "rules/hdfc_millennia.json"
+      "card_id": 1,
+      "card_name": "HDFC Millennia Credit Card",
+      "rule_file": "hdfc_millennia.json"
     },
     {
-      "card_id": 4,
-      "card_name": "ICICI Amazon Pay",
-      "bank": "ICICI",
-      "file": "rules/icici_amazon_pay.json"
+      "card_id": 2,
+      "card_name": "ICICI Amazon Pay Credit Card",
+      "rule_file": "icici_amazon_pay.json"
+    },
+    {
+      "card_id": 3,
+      "card_name": "Axis Flipkart Credit Card",
+      "rule_file": "axis_flipkart.json"
     },
     {
       "card_id": 5,
-      "card_name": "Axis Flipkart",
-      "bank": "Axis",
-      "file": "rules/axis_flipkart.json"
+      "card_name": "HDFC IndianOil Credit Card",
+      "rule_file": "hdfc_indianoil.json"
+    },
+    {
+      "card_id": 6,
+      "card_name": "HDFC Freedom Credit Card",
+      "rule_file": "hdfc_freedom.json"
+    },
+    {
+      "card_id": 7,
+      "card_name": "Tata Neu Plus HDFC Bank Credit Card",
+      "rule_file": "hdfc_tata_neu_plus.json"
+    },
+    {
+      "card_id": 8,
+      "card_name": "HDFC Diners Club Black Metal Edition Credit Card",
+      "rule_file": "hdfc_diners_black_metal.json"
+    },
+    {
+      "card_id": 9,
+      "card_name": "HDFC INFINIA Metal Edition Credit Card",
+      "rule_file": "hdfc_infinia_metal.json"
+    },
+    {
+      "card_id": 10,
+      "card_name": "Marriott Bonvoy HDFC Bank Credit Card",
+      "rule_file": "hdfc_marriott_bonvoy.json"
+    },
+    {
+      "card_id": 11,
+      "card_name": "IRCTC HDFC Bank Credit Card",
+      "rule_file": "hdfc_irctc.json"
+    },
+    {
+      "card_id": 12,
+      "card_name": "PhonePe HDFC Bank Ultimo Credit Card",
+      "rule_file": "hdfc_phonepe_ultimo.json"
     }
   ]
 }
