@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.openapi.utils import get_openapi
 from backend.routers import cards, suggest, auth
 from backend.models import card, user, user_card
+import os
 
 app = FastAPI()
 
@@ -28,12 +29,18 @@ def custom_openapi():
     )
     schema["components"]["securitySchemes"] = {
         "ApiKeyAuth": {
-            "type": "apiKey",
-            "in": "header",
-            "name": "x-api-key"
+    "type": "apiKey",
+    "in": "header",
+    "name": "x-api-key",
+    "description": "Dev key: **tbc-dev-2024**"
+},
+        "BearerAuth": {
+            "type": "http",
+            "scheme": "bearer",
+            "bearerFormat": "JWT"
         }
     }
-    schema["security"] = [{"ApiKeyAuth": []}]
+    schema["security"] = [{"ApiKeyAuth": []}, {"BearerAuth": []}]
     app.openapi_schema = schema
     return app.openapi_schema
 
