@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.openapi.utils import get_openapi
 from backend.routers import cards, suggest, auth
 from backend.models import card, user, user_card
+from backend.routers.admin import router as admin_router
 import os
 
 app = FastAPI()
@@ -18,6 +19,7 @@ app.add_middleware(
 app.include_router(cards.router)
 app.include_router(suggest.router)
 app.include_router(auth.router)
+app.include_router(admin_router)
 
 def custom_openapi():
     if app.openapi_schema:
@@ -33,7 +35,7 @@ def custom_openapi():
     "in": "header",
     "name": "x-api-key",
     "description": "Dev key: **tbc-dev-2024**"
-},
+},  
         "BearerAuth": {
             "type": "http",
             "scheme": "bearer",

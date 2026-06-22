@@ -64,7 +64,7 @@ def remove_from_wallet(user_card_id: int, db: Session = Depends(get_db), current
 # Search master card list
 @router.get("/search")
 def search_cards(q: str = Query(..., min_length=1), db: Session = Depends(get_db)):
-    cards = db.query(Card).filter(Card.name.ilike(f"{q}%")).all()
+    cards = db.query(Card).filter(Card.name.ilike(f"%{q}%")).all()
     return cards
 
 # Get all cards
